@@ -1,0 +1,79 @@
+-var pageTitle = 'Messagerie Page';
+<!DOCTYPE html>
+html(lang="en")
+  head
+    include ./pug/layout/meta.pug
+    include ./pug/layout/style.pug
+  body
+    .header
+      .container
+        .compte-info
+          .img-content
+            img(src="./imgs/PI_ZAHHARI.png", alt="profile image")
+          .username-info
+            h3
+              | Otmane zahhari
+          .menu-dropdown
+            .user-info
+              h3 Otmane Zahhari
+              p Premium Member
+            hr
+            ul.notification
+              li You have 5 new messages
+              li Notification ...
+              li notification ...
+            hr
+            .row.usermenu-links
+              .col
+                .link-box
+                  i.fa.fa-gear.fa-lg.fa-fw
+                  span Setting
+              .col
+                .link-box
+                  i.fa.fa-user.fa-lg.fa-fw
+                  span My Profile
+              .col
+                .link-box#logout
+                  i.fa.fa-power-off.fa-lg.fa-fw
+                  span Logout
+    .clearfix
+    div.main
+      div.messagerie-content
+          
+          .aside-connected-user
+            .search
+              input(type="text" placeholder="search")
+              i.fa.fa-search
+            .info-user
+              .info-name-status
+                span.info-name otmane
+                  span.info-status online
+            
+                
+          .chat-content
+            .chat-history
+              .previous-message.align-center
+                span#previous previous message
+              ul#chat
+                li.clearfix
+                  .message-data.align-right
+                    span.message-data-time 10:10 AM, Today
+                    span.message-data-name
+                    | Otmane 
+                    i.fa.fa-circle.me
+                  .message.other-message.float-right  Hi Otmane, how are you? How is the project coming along?
+                li.clearfix
+                  .message-data.align-left
+                    span.message-data-name 
+                      i.fa.fa-circle.online
+                    | Otmane 
+                    span.message-data-time 10:10 AM, Today
+                  .message.my-message.float-right  Hi Otmane, how are you? How is the project coming along?
+            form#form-message
+              .chat-message.clearfix
+                textarea(name="message-to-send", id="message-to-send", class="outer-shadow hover-in-shadow", placeholder="Tape your message", rows =3)
+                i.fa.fa-file-o
+                .fa.fa-file-image-o
+                button.button(type="submit") send  
+    include ./pug/layout/scripts.pug
+

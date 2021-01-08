@@ -1,0 +1,31 @@
+.effect-3 {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border: 25px solid $principal-color;
+  border-radius: 50%;
+  left: 50%;
+  top: -120px;
+  animation: leftBounce 3s ease-in-out infinite;
+  z-index: -1;
+}
+
+
+.effect-4::before {
+  content: '';
+  border-top: 30px solid transparent;
+  border-left: 30px solid #06D79C;
+  position: absolute;
+  opacity: 0.5;
+  left: -35px;
+  top: -25px;
+}
+
+.effect-4 {
+  border-top: 30px solid transparent;
+  border-left: 30px solid #06D79C;
+  left: 10%;
+  top: 20%;
+  animation: spin 15s linear infinite;
+  position: absolute;
+}

@@ -1,0 +1,19 @@
+@keyframes leftBounce{
+  0%,100%{
+    transform:translateX(0) ;
+  }
+
+  50%{
+    transform: translateX(25px);
+  }
+}
+
+@keyframes spin{
+  0%{
+    transform:rotate(0deg) ;
+  }
+
+  100%{
+    transform: rotate(360deg);
+  }
+}

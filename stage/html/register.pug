@@ -1,0 +1,39 @@
+-var pageTitle = 'Register Page';
+<!DOCTYPE html>
+html(lang="en")
+  head
+    include ./pug/layout/meta.pug
+    include ./pug/layout/style.pug
+  body
+    .container
+      .effect-3
+      .effect-4
+      .heading
+        h1
+          | Create Account
+      .card-info
+      form.contact-form#register-form
+          .w-100
+            .input-group.outer-shadow.hover-in-shadow
+              input(type="text" id="username" placeholder="Username" autofocus).input-control
+          .w-100
+            .input-group.outer-shadow.hover-in-shadow
+              input(type="password" id="password" placeholder="Password").input-control           
+          .w-100
+            .input-group.outer-shadow.hover-in-shadow
+              input(type="password" id="confirm-password" placeholder="Confim Password").input-control           
+          
+          .submit-btn
+            button.btn-1.outer-shadow.hover-in-shadow
+              | Register
+      .div-register
+        h2
+          | You have an account 
+          a(href='./index.html').link 
+            | Login
+    include ./pug/layout/scripts.pug
+            
+
+
+
+    

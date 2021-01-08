@@ -1,0 +1,46 @@
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.online, .offline, .me {
+	margin-right: 3px;
+	font-size: 10px;
+}
+
+.online {
+color: $green;
+}
+
+.offline {
+color: $orange;
+}
+
+.me {
+color: $blue;
+}
+
+.align-left {
+text-align: left;
+}
+
+
+.align-right {
+text-align: right;
+}
+
+.align-center{
+	text-align:  center;
+}
+
+.float-right {
+float: right;
+}
+
+.open{
+	display: block !important;
+}

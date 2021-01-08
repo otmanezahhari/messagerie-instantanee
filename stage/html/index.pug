@@ -1,0 +1,36 @@
+-var pageTitle = 'Home Page';
+<!DOCTYPE html>
+html(lang="en")
+  head
+    include ./pug/layout/meta.pug
+    include ./pug/layout/style.pug
+  body
+    
+    .container
+      .effect-3
+      .effect-4
+      .heading
+        h1
+          | Welcom To Kwick, A Kwick Messaging
+      .card-info
+      form.contact-form#login-form
+          .w-100
+            .input-group.outer-shadow.hover-in-shadow
+              input(type="text" id="username" placeholder="Userame" autofocus).input-control
+          .w-100
+            .input-group.outer-shadow.hover-in-shadow
+              input(type="password" id="password" placeholder="Password").input-control           
+          
+          .submit-btn
+            button.btn-1.outer-shadow.hover-in-shadow
+              | Login
+      .div-register
+        h2
+          | Don't have an account 
+          a(href='./register.html').link 
+            | Register
+    include ./pug/layout/scripts.pug
+
+
+
+    

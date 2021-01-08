@@ -1,0 +1,41 @@
+.btn-1{
+  padding: 10px 35px;
+  font-size: 16px;
+  font-weight: 500;
+  color: $principal-color;
+  background-color: transparent;
+  line-height: 1.5;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all .3s ease-in-out;
+  display: inline-block;
+  border: none;
+  
+}
+
+.link-box{
+  color: #999;
+  padding: 10px 6px;
+  margin: 0 5px;
+  cursor: pointer;
+  i{
+
+    color: $principal-color;
+
+  }
+}
+
+.button {
+  float: right;
+  color: $blue;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  background: #F2F5F8;
+  
+  &:hover {
+    color: darken($blue, 7%);
+  }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title>Messagerie Page</title>
+    <link rel="stylesheet" href="css/main.css"/>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="compte-info">
+          <div class="img-content"><img src="./imgs/PI_ZAHHARI.png" alt="profile image"/></div>
+          <div class="username-info">
+            <h3>Otmane zahhari</h3>
+          </div>
+          <div class="menu-dropdown">
+            <div class="user-info">
+              <h3>Otmane Zahhari</h3>
+              <p>Premium Member</p>
+            </div>
+            <hr/>
+            <ul class="notification">
+              <li>You have 5 new messages</li>
+              <li>Notification ...</li>
+              <li>notification ...</li>
+            </ul>
+            <hr/>
+            <div class="row usermenu-links">
+              <div class="col">
+                <div class="link-box"><i class="fa fa-gear fa-lg fa-fw"></i><span>Setting</span></div>
+              </div>
+              <div class="col">
+                <div class="link-box"><i class="fa fa-user fa-lg fa-fw"></i><span>My Profile</span></div>
+              </div>
+              <div class="col">
+                <div class="link-box" id="logout"><i class="fa fa-power-off fa-lg fa-fw"></i><span>Logout</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="main">
+      <div class="messagerie-content">
+        <div class="aside-connected-user">
+          <div class="search">
+            <input type="text" placeholder="search"/><i class="fa fa-search"></i>
+          </div>
+          <div class="info-user">
+            <div class="info-name-status"><span class="info-name">otmane<span class="info-status">online</span></span></div>
+          </div>
+        </div>
+        <div class="chat-content">
+          <div class="chat-history">
+            <div class="previous-message align-center"><span id="previous">previous message</span></div>
+            <ul id="chat">
+              <li class="clearfix">
+                <div class="message-data align-right"><span class="message-data-time">10:10 AM, Today</span><span class="message-data-name"></span>Otmane <i class="fa fa-circle me"></i></div>
+                <div class="message other-message float-right"> Hi Otmane, how are you? How is the project coming along?</div>
+              </li>
+              <li class="clearfix">
+                <div class="message-data align-left"><span class="message-data-name"> <i class="fa fa-circle online"></i></span>Otmane <span class="message-data-time">10:10 AM, Today</span></div>
+                <div class="message my-message float-right"> Hi Otmane, how are you? How is the project coming along?</div>
+              </li>
+            </ul>
+          </div>
+          <form id="form-message">
+            <div class="chat-message clearfix">
+              <textarea class="outer-shadow hover-in-shadow" name="message-to-send" id="message-to-send" placeholder="Tape your message" rows="3"></textarea><i class="fa fa-file-o"></i>
+              <div class="fa fa-file-image-o"></div>
+              <button class="button" type="submit">send  </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
